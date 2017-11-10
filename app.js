@@ -1,6 +1,5 @@
-<script>
-var myApp = angular.moduel('myApp',[]);
+
+var app = angular.module('myApp',[]);
 app.controller('myController', function($scope){
-	$scope.numberbox = "Enter numbers here";
+	$scope.numberbox = "Enter numbers here"
 });
-</script>
