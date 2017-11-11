@@ -7,3 +7,6 @@ function($scope){
 	$scope.numberbox2=3;
 }
 );
+function myNum($x){
+	$scope.numberbox1=x;
+}

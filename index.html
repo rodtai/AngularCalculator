@@ -3,16 +3,29 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
 <script src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
 	<h1>Calculator</h1>
 	<div ng-app = "myApp" ng-controller = "myController">
-	<input type="text" placeholder = "Enter number here"ng-model="numberbox1">
-	<span>*</span>
-	<input type="text" placeholder = "Enter number here"ng-model="numberbox2">
-	<br>
-    <p>{{numberbox1}} * {{numberbox2}} =  
-    <span ng-bind = "numberbox1*numberbox2"></span> </p>
+		<div id "numInput">
+		<input id = "inputBox" type="text" placeholder = "Enter number here"ng-model="numberbox"> 
+		<button id = "enterButton" type="button">ENTER</button>
+		</div>
+		<div class= "component" ng-init="numbers = [7,8,9]">
+			<button id= "numbers" ng-repeat="x in numbers" type="button">{{x}}</button>
+			<br>
+			<button id= "numbers" ng-repeat="x in numbers" type="button">{{x-3}}</button>
+			<br>
+			<button id= "numbers" ng-repeat="x in numbers" type="button">{{x-6}}</button>
+			<br ng-init="lastRow = [0,'.','(-)']">
+			<button id = "numbers" ng-repeat="y in lastRow" type="button">{{y}}</button>
+		</div>
+
+		<div class="component" ng-init="operations = ['÷','x','-','+']">
+			<button id= "operations" ng-repeat="x in operations" type="button">{{x}}</button>	
+		</div>
+		<p>{{numberbox}}</p>
 	</div>
 </body>
 </html>

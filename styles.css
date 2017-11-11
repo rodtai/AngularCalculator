@@ -1,0 +1,30 @@
+#numInput{
+	display: block;
+}
+#inputBox{
+	width: 188px;
+	margin: 2px;
+}
+#enterButton{
+	width: 60px;
+	margin: 5px;
+	margin-left: 10px;
+}
+.component{
+	display: inline-block;
+}
+#operations{
+	height: 40px;
+	width: 60px;
+	margin: 5px;
+	display: block;
+	font: Arial;
+	font-size: 20;
+}
+#numbers{
+	height: 40px;
+	width: 60px;
+	margin: 2px;
+	font: Arial;
+	font-size: 20;
+}
