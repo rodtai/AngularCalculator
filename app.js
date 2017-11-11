@@ -3,10 +3,10 @@ var app = angular.module('myApp',[]);
 app.controller(
 'myController', 	
 function($scope){
-	$scope.numberbox1=2;
-	$scope.numberbox2=3;
+	$scope.numberbox = "";
+	$scope.num = [["9","8","7"],["6","5","4"],["3","2","1"],["0",".","(-)"]];
+	$scope.concatNum= function(val){
+		$scope.numberbox += val;
+	};
 }
 );
-function myNum($x){
-	$scope.numberbox1=x;
-}
